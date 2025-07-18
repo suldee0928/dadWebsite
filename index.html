@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--we have added this view port tag and set initial scale to 1 so that our side shoudl be adjustable according to different devices especially for mobile devices-->
+        <title>SuldNet | Solution For Mining </title>
+        <link rel="stylesheet" href="CSS/style.css"> 
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet"><!--poppins font from google fonts website then select popping select some types and then embed-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"><!--link to connect to font awesome 4 to use different icons, just type font awesome 4 cdn and click on first link and copy the url and past it here with rel="stylesheet"-->
+    </head>
+
+    <body>
+
+        <!--making header-->
+    <div class="header">
+        <div class="container">
+
+            <!--making navigation bar consist of logo and menu links-->
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="SuldNet logo" width=125px></a>
+                </div>
+    
+                <!--menu-->
+                 <nav> 
+                    <ul id="MenuItems"><!--use this id in js-->                   
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Products.html">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="images/cart.png" alt="cart" width=30px height=30px></a><!--adding cart image in navigation section -->
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()"><!--this is the menu icon which  will be displayed on smaller screens with 3 lines, and when we click on it, it will open upside down or like dropdown menu, to open like this we have pass one menutoggle function to it which we have written in the end in js-->
+            </div>
+
+        
+            <!--making another section in header class container-->
+            <div class="row">
+
+                <!--dividing this section into 2 columns-->
+                <!--1st column for heading button and text-->
+                <div class="col-2">
+                    <h1>Power Up Your Mining<br>Operations Today!</h1>
+                    <p>From surface to underground, our rugged and reliable equipment helps you dig deeper, move faster, and increase safety across the board.</p>
+                    <a href="Products.html" class="btn">Browse Equipment &#8594;</a>
+                </div>
+
+
+                <!--2nd for image-->
+                <div class="col-2">
+                    <img src="images/image1.jpg" alt="header image">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Featured categories-->
+    <!--categores class to edit whole section, then small container class to edit whole row, then row class to edit area surrounding images, then col-3 class to edit col of each image then col-3 img used in css to edit image -->
+    <div class="categories">
+
+        <!--we will create 3 column for 3 images at a time in single row like we did above by making 2 columns-->
+
+        <!--small container class contains row which consist of whole columns sections then col-3 which consist of col of images-->
+        <div class="small container">,<!--container class to edit images section-->
+            <div class="row">
+
+                <!--3 columns for 3 images-->
+                <div class="col-3">
+                    <img src="images/category-1.jpg" alt="">
+                </div>
+                <div class="col-3">
+                    <img src="images/category-2.jpg" alt="">
+                </div>
+                <div class="col-3">
+                    <img src="images/category-3.jpg" alt="">
+                </div>
+    
+            </div>
+        </div>
+
+    </div>
+
+     <!--Featured Products-->
+     <!--using same class small container to maintain same styling-->
+     
+     <div class="small container">
+         <!--using again same row class to maintain same styling -->
+        <h2 class="title">Featured Products</h2>
+         <div class="row">
+             <!--this time we will make 4 columns-->
+     
+             <!--it contains 4 different products with heading h4, image, price <p> and rating star-->
+             <div class="col-4">
+                 <a href="product-detail.html"><img src="images/product-1.png"></a><!--product img-->
+                 <a href="product-detail.html"><h4>Hydraulic Rock Drill</h4></a><!--product title-->
+                 <div class="rating"><!--add stars for rating of product from font awesome 4-->
+                    <i class="fa fa-star" aria-hidden="true"></i><!--add 4 black start and one transparent star to show 4 out of 5 rating-->
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                 </div>
+                 <p>$5000.00</p><!--product price-->
+             </div>
+
+             <div class="col-4">
+                <img src="images/product-2.jpg"><!--product img-->
+                <h4>Heavy-Duty Dump Truck</h4><!--product title-->
+                <div class="rating"><!--add stars for rating of product from font awesome 4-->
+                   <i class="fa fa-star" aria-hidden="true"></i><!--add 4 black start and one transparent star to show 4 out of 5 rating-->
+                   <i class="fa fa-star" aria-hidden="true"></i>
+                   <i class="fa fa-star" aria-hidden="true"></i>
+                   <i class="fa fa-star" aria-hidden="true"></i>
+                   <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p>$900000.00</p><!--product price-->
+            </div>
+
+            <div class="col-4">
+                <img src="images/product-3.png"><!--product img-->
+                <h4>Underground Loader</h4><!--product title-->
+                <div class="rating"><!--add stars for rating of product from font awesome 4-->
+                   <i class="fa fa-star" aria-hidden="true"></i><!--add 4 black start and one transparent star to show 4 out of 5 rating-->
+                   <i class="fa fa-star" aria-hidden="true"></i>
+                   <i class="fa fa-star" aria-hidden="true"></i>
+                   <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                   <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p>$1500000.00</p><!--product price-->
+            </div>
+
+            <div class="col-4">
+                <img src="images/product-4.jpg"><!--product img-->
+                <h4>Excavator Attachment</h4><!--product title-->
+                <div class="rating"><!--add stars for rating of product from font awesome 4-->
+                   <i class="fa fa-star" aria-hidden="true"></i><!--add 4 black start and one transparent star to show 4 out of 5 rating-->
+                   <i class="fa fa-star" aria-hidden="true"></i>
+                   <i class="fa fa-star" aria-hidden="true"></i>
+                   <i class="fa fa-star" aria-hidden="true"></i>
+                   <i class="fa fa-star-half-o" aria-hidden="true"></i>
+
+                </div>
+                <p>$70000.00</p><!--product price-->
+            </div>
+         </div>
+    </div>
+
+
+    <!--offer-->
+    <div class="offer">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-2">
+                   <img src="images/exclusive.png" class="offer-img"> 
+                </div>
+
+                <div class="col-2">
+                    <p>Exclusively available on SuldNet</p>
+                    <h1>Hydraulic Rock Drill</h1>
+                    <small>
+                        Integrated hydraulic rock drill and splitter is an advanced non-blasting rock-breaking equipment that can break very hard rocks. The rock drill and splitter are perfectly combined with the excavator, and the corresponding electro-hydraulic control system is added by using the original power of the excavator, realizing a multi-purpose machine. Integrated hydraulic rock drill and splitter have fast drilling speed, large splitting force, and flexible movement of the whole machine.
+                    </small>
+                    <a href="" class="btn">Buy Now &#8594;</a><!--where &#8594 is the code of arrow icon in explore now button-->
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------testimonials-------------->
+
+    <div class="testimonial">
+        <div class="small container"><!--section-->
+            <div class="row"><!--row-->
+                
+                <!--3 comments-->
+                <div class="col-3"><!--3 columns-->
+
+                    <!--add " or left quote before comment-->
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the prinitng and typesetting industry. Lorem Ipsum has been the industry;s standard dummy text ever
+                    </p>
+                    <div class="rating"><!--add stars for rating of product from font awesome 4-->
+                        <i class="fa fa-star" aria-hidden="true"></i><!--add 4 black start and one transparent star to show 4 out of 5 rating-->
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                     </div>
+                     <img src="images/user-1.png"><!--image of person-->
+                     <h3>Sean Parker</h3><!--name of person-->
+   
+                </div>
+
+                <div class="col-3"><!--3 columns-->
+
+                    <!--add " or left quote before comment-->
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the prinitng and typesetting industry. Lorem Ipsum has been the industry;s standard dummy text ever
+                    </p>
+                    <div class="rating"><!--add stars for rating of product from font awesome 4-->
+                        <i class="fa fa-star" aria-hidden="true"></i><!--add 4 black start and one transparent star to show 4 out of 5 rating-->
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                     </div>
+                     <img src="images/user-2.png"><!--image of person-->
+                     <h3>Mike Smith</h3><!--name of person-->
+   
+                </div>
+
+                <div class="col-3"><!--3 columns-->
+
+                    <!--add " or left quote before comment-->
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the prinitng and typesetting industry. Lorem Ipsum has been the industry;s standard dummy text ever
+                    </p>
+                    <div class="rating"><!--add stars for rating of product from font awesome 4-->
+                        <i class="fa fa-star" aria-hidden="true"></i><!--add 4 black start and one transparent star to show 4 out of 5 rating-->
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                     </div>
+                     <img src="images/user-3.png"><!--image of person-->
+                     <h3>Mable Joe</h3><!--name of person-->
+   
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!----------brands-------------->
+
+    <!-------footer------->
+    <div class="footer">
+        <div class="container"><!-- it will follow same styling as of header-->
+            <div class="row">
+                
+
+                <div class="footer-col-2">
+                    <img src="images/logo.png">
+                    <p>Our mission is to empower mining operations with world-class equipment and unmatched reliability, built for the toughest environments on Earth.</p>
+
+                </div>
+
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                    
+                </div>
+
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                    
+                </div>
+            </div>
+            <!--add horizontal line and copyright text along with clickable link-->
+            <hr>
+        </div>
+    </div>         
+
+    <!-----------------JS----------------------->
+    <script>
+        //declare variable MenuItems which take ul having id "MenuItems"
+        
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";//by default, we have set menu or dropdown menu height to 0px, means it is close by default
+        
+        function menutoggle()//this is the function which we have called above in nav which works on small devices and users click on it
+        {
+            if (MenuItems.style.maxHeight =="0px")//when user click on it and if it is closed or its height is 0px, then it will open or it should have heigt of 200px upon clicking
+            {
+                MenuItems.style.maxHeight = "200px"
+            }
+            else//if user not clicked or it has already opened, then it will upon clicking again closed
+            {
+                MenuItems.style.maxHeight = "0px" 
+            }
+        
+        }
+    </script>    
+    
+    </body>
+
+</html>
